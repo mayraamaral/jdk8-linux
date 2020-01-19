@@ -1,4 +1,20 @@
 # Instalando JDK 8 no Linux Ubuntu
+Caso você esteja querendo instalar o Android Studio para usar o React Native, na [guia do Facebook](https://facebook.github.io/react-native/docs/getting-started.html#android-development-environment) para instalação há a recomendação de instalar tanto o OpenJDK 8 quanto o Oracle JDK 8. Para usar Kotlin, eu não sei se o OpenJDK é necessário, mas acredito que também seja, então abaixo está o guia para instalação dos dois JDKs.  
+  
+## Guia
+* [1. Instalando OpenJDK 8]()
+* [2. Instalando Oracle JDK 8](#2-instalando-oracle-jdk-8)
+
+## 1. Instalando Open JDK 8
+Abra o terminal e digite o comando:  
+  
+```sudo apt-get install openjdk-8-jdk```  
+  
+E após finalizar, o OpenJDK já vai estar instalado.  
+  
+[Site do OpenJDK](https://openjdk.java.net/install)  
+
+## 2. Instalando Oracle JDK 8
   
 Baixe o arquivo .tar.gz no [site da Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), depois renomeie ele para "jdk8.tar.gz" para ficar mais fácil.  
   
@@ -21,14 +37,14 @@ Agora que o arquivo já foi extraído e está dentro da pasta /usr/lib/jvm, vamo
 Com o novo arquivo que abriu, adicione as seguinte variáveis:  
   
 ~~~
-/usr/lib/jvm/jdk1.8.0_231/bin
-/usr/lib/jvm/jdk1.8.0_231/db/bin
-/usr/lib/jvm/jdk1.8.0_231/jre/bin
+/usr/lib/jvm/jdk1.8.0_241/bin
+/usr/lib/jvm/jdk1.8.0_241/db/bin
+/usr/lib/jvm/jdk1.8.0_241/jre/bin
 ~~~  
   
 O código não deve ser adicionado dessa forma, deve haver dois pontos entre cada variável, dessa forma:  
   
-```/usr/lib/jvm/jdk1.8.0_231/bin:/usr/lib/jvm/jdk1.8.0_231/db/bin:/usr/lib/jvm/jdk1.8.0_231/jre/bin``` 
+```/usr/lib/jvm/jdk1.8.0_241/bin:/usr/lib/jvm/jdk1.8.0_241/db/bin:/usr/lib/jvm/jdk1.8.0_241/jre/bin``` 
   
 E esses códigos devem estar **dentro das aspas** que correspondem aos caminhos do PATH. Ou seja, não adicione no fim de tudo, adicione antes da última aspa, *lembre de colocar dois pontos antes de colar o código acima*.  
   
@@ -37,10 +53,10 @@ Depois de ter feito isso, agora vamos adicionar as outras variáveis de ambiente
 **Os códigos abaixo devem ser colados DEPOIS das aspas do PATH, ou seja, pule linha**  
   
 ~~~
-J2SDKDIR="/usr/lib/jvm/jdk1.8.0_231"
-J2REDIR="/usr/lib/jvm/jdk1.8.0_231/jre"
-JAVA_HOME="/usr/lib/jvm/jdk1.8.0_231"
-DERBY_HOME="/usr/lib/jvm/jdk1.8.0_231/db"
+J2SDKDIR="/usr/lib/jvm/jdk1.8.0_241"
+J2REDIR="/usr/lib/jvm/jdk1.8.0_241/jre"
+JAVA_HOME="/usr/lib/jvm/jdk1.8.0_241"
+DERBY_HOME="/usr/lib/jvm/jdk1.8.0_241/db"
 ~~~  
   
 Depois de ter feito todo o passo anterior, digite:  
