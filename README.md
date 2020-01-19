@@ -2,7 +2,7 @@
 Caso você esteja querendo instalar o Android Studio para usar o React Native, na [guia do Facebook](https://facebook.github.io/react-native/docs/getting-started.html#android-development-environment) para instalação há a recomendação de instalar tanto o OpenJDK 8 quanto o Oracle JDK 8. Para usar Kotlin, eu não sei se o OpenJDK é necessário, mas acredito que também seja, então abaixo está o guia para instalação dos dois JDKs.  
   
 ## Guia
-* [1. Instalando OpenJDK 8](#1-instalando-o-open-jdk-8)
+* [1. Instalando OpenJDK 8](#1-instalando-open-jdk-8)
 * [2. Instalando Oracle JDK 8](#2-instalando-oracle-jdk-8)
 
 ## 1. Instalando Open JDK 8
